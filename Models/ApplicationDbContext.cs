@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace StackOverflow.Models
 {
@@ -17,6 +13,6 @@ namespace StackOverflow.Models
         {
             base.OnModelCreating(builder);
         }
-        //public DbSet<Item> Items { get; set; }
+        public DbSet<Question> Questions { get; set; }
     }
 }
